@@ -292,8 +292,8 @@ export const nodes = [
     label: { ru: ['Системный анализ', 'и интеграция'], en: ['Systems analysis', 'and integration'] },
     needs: [],
     summary: {
-      ru: 'Мой действующий фундамент: три года проектов для крупнейших российских компаний в ритейле, финтехе и телекоме. Требования, микросервисы, интеграции, запуск систем с нуля и миграции.',
-      en: 'The ground I already stand on: three years of projects for some of the largest Russian companies in retail, fintech and telecom. Requirements, microservices, integrations, greenfield launches and migrations.',
+      ru: 'Мой действующий практический фундамент: три года проектов для крупнейших российских компаний в ритейле, финтехе и телекоме. Требования, микросервисы, интеграции, запуск систем с нуля и миграции.',
+      en: 'The practical ground I already stand on: three years of projects for some of the largest Russian companies in retail, fintech and telecom. Requirements, microservices, integrations, greenfield launches and migrations.',
     },
     theory: {
       ru: ['Сбор и управление требованиями', 'Микросервисы и интеграции: REST, Apache Kafka, CDC на Debezium', 'API-first и событийная архитектура', 'BPMN и Camunda', 'UML, C4, ADR, DDD', 'PostgreSQL, Redis, MongoDB'],
