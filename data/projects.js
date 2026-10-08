@@ -92,7 +92,9 @@ The thesis was defended with the top grade at HSE University. Stack: Python, Ope
 - Самостоятельное приложение на Python и PyQt6, которое могут использовать другие лаборатории.
 - Точность на уровне полуручной обработки специалистами, подтверждена пользовательским тестированием на экспериментальных данных.
 - Руководства пользователя и разработчика.
-- Благодарственный отзыв заказчика.`,
+- Благодарственный отзыв заказчика.
+
+Стек: Python, C++, Qt (PyQt6).`,
       en: `The laboratory studies how the brain plans movement. In the experiment a person picks up an object and puts it in a given place, while a motion capture system records the 3D coordinates of seven trackers on the hand, the glasses and the object at 250 Hz. Before this project the data was processed half by hand.
 
 **My role**
@@ -111,7 +113,9 @@ Team lead and analyst-developer in a team of two developers: gathered and agreed
 - A standalone application in Python and PyQt6 that other laboratories can use.
 - Accuracy on par with semi-manual processing by specialists, confirmed by user acceptance testing on experimental data.
 - User and developer guides.
-- A letter of thanks from the customer.`,
+- A letter of thanks from the customer.
+
+Stack: Python, C++, Qt (PyQt6).`,
     },
     images: ['images/kinematic4-ui.png'],
     links: [],
