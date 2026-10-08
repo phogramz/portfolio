@@ -211,6 +211,8 @@ function workCard(p, withNode) {
   return `<article class="work" id="work-${esc(p.id)}">`
     + `<p class="work-meta">${meta}</p>`
     + `<h3>${withNode ? `<a href="#/node/${node.id}">${esc(t(p.title))}</a>` : esc(t(p.title))}</h3>`
+    + (withNode && p.images?.length
+      ? `<a class="work-thumb" href="#/node/${node.id}" tabindex="-1" aria-hidden="true"><img src="${esc(p.images[0])}" alt="" loading="lazy"></a>` : '')
     + (withNode
       ? `<p>${esc(t(p.summary))}</p><p class="work-node">${esc(s().inNode)}: ${esc(t(node.title))}</p>`
       : `<div class="work-body">${rich(t(p.body))}</div>`)
