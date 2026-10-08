@@ -8,8 +8,8 @@ export const profile = {
     en: 'I design IT systems and I am moving towards the architecture of physical systems: IoT, connectivity, robotics. This map shows what I already know, what I am learning now and where I am heading.',
   },
   goal: {
-    ru: 'Цель: инженер, который берёт задачу физического мира и проектирует полную систему, от сенсора и радиоканала до роботов, edge, бэкенда и бизнес-системы.',
-    en: 'The goal: an engineer who takes a physical-world problem and designs the whole system, from sensor and radio link to robots, edge, backend and business system.',
+    ru: 'Цель: стать инженером, который берёт задачу из физического мира и проектирует систему целиком: от датчика и канала связи до облачной платформы и процессов заказчика.',
+    en: 'The goal: to become an engineer who takes a problem from the physical world and designs the whole system, from the sensor and the radio link to the cloud platform and the customer’s processes.',
   },
   location: { ru: 'Москва', en: 'Moscow' },
   photo: 'images/portrait.jpg',
