@@ -6,9 +6,11 @@
 //           'planned'  — в планах
 // depth:    целевая глубина от 1 до 10
 // needs:    id узлов, на которые опирается этот узел
-// x, y:     положение центра узла на карте (поле 1180 × 880)
+// depth можно не указывать, тогда шкала глубины не показывается
+// x, y:     положение центра узла на карте (поле 1180 × 990)
 
 export const levels = [
+  { y: 925, ru: 'Учёба', en: 'Study' },
   { y: 815, ru: 'Основа', en: 'Ground' },
   { y: 700, ru: 'Устройство и сигнал', en: 'Device and signal' },
   { y: 580, ru: 'Сеть и система', en: 'Network and OS' },
@@ -271,10 +273,10 @@ export const nodes = [
     x: 370, y: 815, status: 'learning', depth: 5,
     title: { ru: 'Электроника и сенсоры', en: 'Electronics and sensors' },
     label: { ru: ['Электроника', 'и сенсоры'], en: ['Electronics', 'and sensors'] },
-    needs: [],
+    needs: ['education'],
     summary: {
-      ru: 'Корень дерева: как физическая величина становится электрическим сигналом, а сигнал превращается в данные. Не стать электронщиком, а понять физический смысл.',
-      en: 'The root of the tree: how a physical quantity becomes an electrical signal, and the signal becomes data. Not to become an electronics engineer, but to understand the physics.',
+      ru: 'Первый слой физического мира: как физическая величина становится электрическим сигналом, а сигнал превращается в данные. Не стать электронщиком, а понять физический смысл.',
+      en: 'The first layer of the physical world: how a physical quantity becomes an electrical signal, and the signal becomes data. Not to become an electronics engineer, but to understand the physics.',
     },
     theory: {
       ru: ['Напряжение, ток, сопротивление, мощность', 'Постоянный и переменный ток', 'Аналоговый и цифровой сигнал', 'АЦП и ЦАП, дискретизация, шум', 'Подтяжки, уровни логики 3,3 и 5 В', 'Питание и земля'],
@@ -290,7 +292,7 @@ export const nodes = [
     x: 930, y: 815, status: 'solid', depth: 9,
     title: { ru: 'Системный анализ и интеграция ИТ-систем', en: 'Systems analysis and IT integration' },
     label: { ru: ['Системный анализ', 'и интеграция'], en: ['Systems analysis', 'and integration'] },
-    needs: [],
+    needs: ['education'],
     summary: {
       ru: 'Мой действующий практический фундамент: три года проектов для крупнейших российских компаний в ритейле, финтехе и телекоме. Требования, микросервисы, интеграции, запуск систем с нуля и миграции.',
       en: 'The practical ground I already stand on: three years of projects for some of the largest Russian companies in retail, fintech and telecom. Requirements, microservices, integrations, greenfield launches and migrations.',
@@ -302,6 +304,25 @@ export const nodes = [
     practice: {
       ru: ['Рабочие проекты описаны на странице «Опыт»'],
       en: ['Work projects are described on the Experience page'],
+    },
+  },
+  {
+    id: 'education',
+    x: 650, y: 925, status: 'solid',
+    title: { ru: 'Образование: теоретический фундамент', en: 'Education: the theoretical foundation' },
+    label: { ru: ['Образование'], en: ['Education'] },
+    needs: [],
+    summary: {
+      ru: 'Мой теоретический фундамент: бакалавриат по информационным системам и магистратура по интернету вещей и киберфизическим системам. Из бакалавриата выросла работа с ИТ-системами, из магистратуры интерес к физическим системам, связи и компьютерному зрению.',
+      en: 'My theoretical foundation: a bachelor’s degree in information systems and a master’s degree in the Internet of Things and cyber-physical systems. The bachelor’s led to my work with IT systems; the master’s led to my interest in physical systems, connectivity and computer vision.',
+    },
+    theory: {
+      ru: ['Магистратура, НИУ ВШЭ, МИЭМ, 2023–2025: «Интернет вещей и киберфизические системы», направление «Инфокоммуникационные технологии и системы связи»', 'Бакалавриат, НИУ МГСУ, 2019–2023: «Информационные системы и технологии», диплом с отличием'],
+      en: ['Master’s degree, HSE University, MIEM, 2023–2025: Internet of Things and Cyber-Physical Systems, in the field of Infocommunication Technologies and Communication Systems', 'Bachelor’s degree, Moscow State University of Civil Engineering, 2019–2023: Information Systems and Technologies, with honours'],
+    },
+    practice: {
+      ru: ['Магистерская диссертация по видеоаналитике дорожного движения', 'Проект для Института когнитивных нейронаук НИУ ВШЭ', 'Научный проект в лаборатории YADRO по планировщикам LTE'],
+      en: ['Master’s thesis on road traffic video analytics', 'A project for the HSE Institute for Cognitive Neuroscience', 'A research project at the YADRO laboratory on LTE schedulers'],
     },
   },
 ];

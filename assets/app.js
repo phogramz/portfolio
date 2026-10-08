@@ -152,7 +152,7 @@ function treeSvg() {
       + `<text class="node-text">${text}</text>${badge}</a>`;
   }).join('');
 
-  return `<svg class="tree" viewBox="-150 25 1250 835" role="group" aria-label="${esc(s().mapAria)}">`
+  return `<svg class="tree" viewBox="-150 25 1250 945" role="group" aria-label="${esc(s().mapAria)}">`
     + `<g>${guides}</g><g>${edges}</g><g>${boxes}</g></svg>`;
 }
 
@@ -222,10 +222,13 @@ function workCard(p, withNode) {
 }
 
 function home() {
-  return `<section class="hero">
-      <h1>${esc(t(profile.name))}</h1>
-      <p class="hero-role">${esc(t(profile.role))}, ${esc(t(profile.location))}</p>
-      <p class="hero-lede">${esc(t(profile.lede))}</p>
+  return `<section class="hero${profile.photo ? ' hero-with-photo' : ''}">
+      <div class="hero-text">
+        <h1>${esc(t(profile.name))}</h1>
+        <p class="hero-role">${esc(t(profile.role))}, ${esc(t(profile.location))}</p>
+        <p class="hero-lede">${esc(t(profile.lede))}</p>
+      </div>
+      ${profile.photo ? `<img class="hero-photo" src="${esc(profile.photo)}" alt="${esc(t(profile.name))}" width="800" height="800">` : ''}
     </section>
     <section class="map" aria-labelledby="map-title">
       <div class="map-head">
@@ -270,7 +273,7 @@ function nodePage(id) {
         <h1>${esc(t(n.title))}</h1>
         <div class="node-state">
           <span class="chip"><span class="dot dot-${n.status}" aria-hidden="true"></span>${esc(s()[n.status])}</span>
-          ${depthMeter(n)}
+          ${n.depth ? depthMeter(n) : ''}
         </div>
         <p class="node-summary">${esc(t(n.summary))}</p>
       </header>

@@ -14,7 +14,7 @@ export const projects = [
     id: 'pedestrian-crossing-analytics',
     kind: 'research',
     year: '2025',
-    nodes: ['edge-ai'],
+    nodes: ['edge-ai', 'education'],
     title: {
       ru: 'Анализ поведения пешеходов на переходах',
       en: 'Pedestrian behaviour analysis at crossings',
@@ -64,7 +64,7 @@ The thesis was defended with the top grade at HSE University. Stack: Python, Ope
     id: 'kinematic-4',
     kind: 'study',
     year: '2024–2025',
-    nodes: ['it-systems', 'signals'],
+    nodes: ['it-systems', 'signals', 'education'],
     title: {
       ru: 'Kinematic 4: анализ кинематики движения кисти',
       en: 'Kinematic 4: hand movement kinematics analysis',
@@ -120,7 +120,7 @@ Team lead and analyst-developer in a team of two developers: gathered and agreed
     id: 'lte-scheduler-research',
     kind: 'research',
     year: '2024',
-    nodes: ['cellular'],
+    nodes: ['cellular', 'education'],
     title: {
       ru: 'Планировщики базовых станций LTE: Proportional Fair',
       en: 'LTE base station schedulers: Proportional Fair',

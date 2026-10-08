@@ -87,7 +87,10 @@ a:hover { color: var(--rust); }
 
 /* ---------- главная ---------- */
 
-.hero { padding: clamp(28px, 6vw, 72px) 0 clamp(28px, 4vw, 48px); max-width: 46rem; }
+.hero { padding: clamp(28px, 6vw, 72px) 0 clamp(28px, 4vw, 48px); }
+.hero-text { max-width: 46rem; }
+.hero-with-photo { display: grid; grid-template-columns: minmax(0, 1fr) clamp(220px, 26vw, 320px); gap: 24px clamp(28px, 5vw, 72px); align-items: center; }
+.hero-photo { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); box-shadow: 10px 10px 0 var(--paper-shade); display: block; }
 .hero-role { font-size: 1.1rem; color: var(--ink-soft); margin: 14px 0 20px; }
 .hero-lede { font-family: var(--serif); font-size: clamp(1.25rem, 2.2vw, 1.5rem); line-height: 1.45; max-width: 38rem; }
 
@@ -217,6 +220,8 @@ a:hover { color: var(--rust); }
 /* ---------- узкие экраны ---------- */
 
 @media (max-width: 860px) {
+  .hero-with-photo { grid-template-columns: 1fr; }
+  .hero-photo { width: 132px; grid-row: 1; box-shadow: 6px 6px 0 var(--paper-shade); }
   .map-head { grid-template-columns: 1fr; }
   .map-canvas { display: none; }
   .tree-list { display: block; }

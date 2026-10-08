@@ -12,6 +12,7 @@ export const profile = {
     en: 'The goal: an engineer who takes a physical-world problem and designs the whole system, from sensor and radio link to robots, edge, backend and business system.',
   },
   location: { ru: 'Москва', en: 'Moscow' },
+  photo: 'images/portrait.jpg',
   contacts: [
     { label: 'GitHub', href: 'https://github.com/phogramz' },
     // Добавьте сюда другие контакты, например:
