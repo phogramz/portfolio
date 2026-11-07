@@ -84,8 +84,8 @@ export const nodes = [
     label: { ru: ['Архитектура систем', 'телекома и финтеха'], en: ['Telecom and fintech', 'architecture'] },
     needs: ['integration', 'modeling'],
     summary: {
-      ru: 'Моя текущая работа: архитектура систем в телекоме и финтехе. Здесь знания об интеграциях и моделировании превращаются в решения для высоконагруженных сервисов.',
-      en: 'My current work: architecture of systems in telecom and fintech. This is where integration and modelling knowledge turns into decisions for high-load services.',
+      ru: 'Моя текущая работа: архитектура систем в телекоме и финтехе. Здесь знания об интеграциях и моделировании превращаются в решения, которые обслуживают миллионы абонентов.',
+      en: 'My current work: architecture of systems in telecom and fintech. This is where integration and modelling knowledge turns into decisions that serve millions of subscribers.',
     },
     theory: {
       ru: ['Предметная область: абонент, тариф, услуга, платёж', 'Высоконагруженные и критичные к доступности сервисы', 'Платёжные сценарии и согласованность данных', 'Требования регуляторов и информационной безопасности'],
