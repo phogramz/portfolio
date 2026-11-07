@@ -4,12 +4,12 @@ export const profile = {
   name: { ru: 'Максим Морозов', en: 'Maxim Morozov' },
   role: { ru: 'Системный архитектор', en: 'Systems architect' },
   lede: {
-    ru: 'Проектирую ИТ-системы и двигаюсь к архитектуре физических систем: интернет вещей, связь, робототехника. Эта карта показывает, что я уже знаю, что изучаю сейчас и куда иду.',
-    en: 'I design IT systems and I am moving towards the architecture of physical systems: IoT, connectivity, robotics. This map shows what I already know, what I am learning now and where I am heading.',
+    ru: 'Проектирую архитектуру финансовых сервисов и CRM-системы у оператора связи. Работаю на стыке интеграций, документации и нагрузки и встраиваю ИИ-инструменты в инженерную практику.',
+    en: 'I design the architecture of financial services and the CRM system at a mobile operator. I work where integrations, documentation and load meet, and I bring AI tools into engineering practice.',
   },
   goal: {
-    ru: 'Цель: стать инженером, который берёт задачу из физического мира и проектирует систему целиком: устройства, связь, обработку данных и интеграцию с процессами заказчика.',
-    en: 'The goal: to become an engineer who takes a problem from the physical world and designs the whole system: devices, connectivity, data processing and integration with the customer’s processes.',
+    ru: 'Следующая точка: solution-архитектура. Отвечать за решение целиком, от бизнес-задачи и требований до технологий, интеграций и стоимости владения. Это не финиш, а уровень, с которого видно, куда расти дальше.',
+    en: 'The next point: solution architecture. Owning the whole solution, from the business problem and requirements to technology, integrations and cost of ownership. Not a finish line, but a level from which the next steps become visible.',
   },
   location: { ru: 'Москва', en: 'Moscow' },
   photo: 'images/portrait.jpg',

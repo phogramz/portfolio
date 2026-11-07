@@ -1,5 +1,5 @@
-// Карта развития: узлы дерева и связи между ними.
-// Чтобы изменить статус, глубину или текст узла, правьте этот файл.
+// Лаборатория: hobby-трек про физические системы (IoT, связь, робототехника).
+// Основной трек описан в data/career.js. Формат узлов одинаковый.
 //
 // status:   'solid'    — уверенно владею, есть рабочий опыт
 //           'learning' — есть база, изучаю сейчас
@@ -24,8 +24,8 @@ export const nodes = [
   {
     id: 'architecture',
     x: 600, y: 70, status: 'learning', depth: 9,
-    title: { ru: 'Архитектура решений', en: 'Solution architecture' },
-    label: { ru: ['Архитектура', 'решений'], en: ['Solution', 'architecture'] },
+    title: { ru: 'Архитектура киберфизических систем', en: 'Cyber-physical systems architecture' },
+    label: { ru: ['Архитектура кибер-', 'физических систем'], en: ['Cyber-physical', 'architecture'] },
     needs: ['distributed', 'cellular', 'iot'],
     summary: {
       ru: 'Вершина дерева: взять задачу физического мира и спроектировать полную систему, от сенсора и радиоканала до платформы и бизнес-системы. Требования, компромиссы, стоимость, надёжность и защита решения перед заказчиком и инженерами.',
@@ -287,42 +287,8 @@ export const nodes = [
       en: ['A temperature sensor on ESP32: ADC, processing, publishing over MQTT', 'IMU, GPS and ToF on one node', 'A multimeter and a logic analyser, later an oscilloscope'],
     },
   },
-  {
-    id: 'it-systems',
-    x: 930, y: 815, status: 'solid', depth: 9,
-    title: { ru: 'Системный анализ и интеграция ИТ-систем', en: 'Systems analysis and IT integration' },
-    label: { ru: ['Системный анализ', 'и интеграция'], en: ['Systems analysis', 'and integration'] },
-    needs: ['education'],
-    summary: {
-      ru: 'Мой действующий практический фундамент: три года проектов для крупнейших российских компаний в ритейле, финтехе и телекоме. Требования, микросервисы, интеграции, запуск систем с нуля и миграции.',
-      en: 'The practical ground I already stand on: three years of projects for some of the largest Russian companies in retail, fintech and telecom. Requirements, microservices, integrations, greenfield launches and migrations.',
-    },
-    theory: {
-      ru: ['Сбор и управление требованиями', 'Микросервисы и интеграции: REST, Apache Kafka, CDC на Debezium', 'API-first и событийная архитектура', 'BPMN и Camunda', 'UML, C4, ADR, DDD', 'PostgreSQL, Redis, MongoDB'],
-      en: ['Requirements elicitation and management', 'Microservices and integration: REST, Apache Kafka, CDC with Debezium', 'API-first and event-driven architecture', 'BPMN and Camunda', 'UML, C4, ADR, DDD', 'PostgreSQL, Redis, MongoDB'],
-    },
-    practice: {
-      ru: ['Рабочие проекты описаны на странице «Опыт»'],
-      en: ['Work projects are described on the Experience page'],
-    },
-  },
-  {
-    id: 'education',
-    x: 650, y: 925, status: 'solid',
-    title: { ru: 'Образование: теоретический фундамент', en: 'Education: the theoretical foundation' },
-    label: { ru: ['Образование'], en: ['Education'] },
-    needs: [],
-    summary: {
-      ru: 'Мой теоретический фундамент: бакалавриат по информационным системам и магистратура по интернету вещей и киберфизическим системам. Из бакалавриата выросла работа с ИТ-системами, из магистратуры интерес к физическим системам, связи и компьютерному зрению.',
-      en: 'My theoretical foundation: a bachelor’s degree in information systems and a master’s degree in the Internet of Things and cyber-physical systems. The bachelor’s led to my work with IT systems; the master’s led to my interest in physical systems, connectivity and computer vision.',
-    },
-    theory: {
-      ru: ['Магистратура, НИУ ВШЭ, МИЭМ, 2023–2025: «Интернет вещей и киберфизические системы», направление «Инфокоммуникационные технологии и системы связи»', 'Бакалавриат, НИУ МГСУ, 2019–2023: «Информационные системы и технологии», диплом с отличием'],
-      en: ['Master’s degree, HSE University, MIEM, 2023–2025: Internet of Things and Cyber-Physical Systems, in the field of Infocommunication Technologies and Communication Systems', 'Bachelor’s degree, Moscow State University of Civil Engineering, 2019–2023: Information Systems and Technologies, with honours'],
-    },
-    practice: {
-      ru: ['Магистерская диссертация по видеоаналитике дорожного движения', 'Проект для Института когнитивных нейронаук НИУ ВШЭ', 'Научный проект в лаборатории YADRO по планировщикам LTE'],
-      en: ['Master’s thesis on road traffic video analytics', 'A project for the HSE Institute for Cognitive Neuroscience', 'A research project at the YADRO laboratory on LTE schedulers'],
-    },
-  },
+  // Узлы основного трека, которые служат опорой для лаборатории.
+  // ref: true — узел описан в data/career.js, здесь задано только место на карте.
+  { id: 'it-systems', ref: true, x: 930, y: 815 },
+  { id: 'education', ref: true, x: 650, y: 925 },
 ];

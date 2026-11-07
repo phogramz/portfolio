@@ -3,7 +3,8 @@
 // считается основным: на него ведёт ссылка с главной страницы.
 //
 // kind:   'research' | 'pet' | 'study' | 'article' | 'note'
-// nodes:  id узлов из data/map.js
+// nodes:  id узлов из data/career.js или data/map.js; трек проекта
+//         определяется по первому узлу
 // images: пути к картинкам, например 'images/robot-1.jpg'
 // links:  [{ label: '...', href: '...' }]
 // body:   текст. Пустая строка разделяет абзацы, строки с "- " дают список,
@@ -162,7 +163,7 @@ On this project I studied how LTE works at the MAC level.`,
     id: 'mcp-agents',
     kind: 'pet',
     year: '',
-    nodes: ['it-systems'],
+    nodes: ['ai-engineering'],
     title: {
       ru: 'ИИ-агенты с интеграцией по MCP',
       en: 'AI agents integrated over MCP',
