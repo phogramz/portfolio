@@ -84,16 +84,16 @@ export const nodes = [
     label: { ru: ['Архитектура систем', 'телекома и финтеха'], en: ['Telecom and fintech', 'architecture'] },
     needs: ['integration', 'modeling'],
     summary: {
-      ru: 'Моя текущая работа: архитектура финансовых сервисов и CRM-системы у оператора связи. Здесь знания об интеграциях и моделировании превращаются в решения, которые обслуживают миллионы абонентов.',
-      en: 'My current work: architecture of financial services and the CRM system at a mobile operator. This is where integration and modelling knowledge turns into decisions that serve millions of subscribers.',
+      ru: 'Моя текущая работа: архитектура систем в телекоме и финтехе. Здесь знания об интеграциях и моделировании превращаются в решения для высоконагруженных сервисов.',
+      en: 'My current work: architecture of systems in telecom and fintech. This is where integration and modelling knowledge turns into decisions for high-load services.',
     },
     theory: {
       ru: ['Предметная область: абонент, тариф, услуга, платёж', 'Высоконагруженные и критичные к доступности сервисы', 'Платёжные сценарии и согласованность данных', 'Требования регуляторов и информационной безопасности'],
       en: ['Domain: subscriber, tariff, service, payment', 'High-load, availability-critical services', 'Payment flows and data consistency', 'Regulatory and information security requirements'],
     },
     practice: {
-      ru: ['Сервис мобильной коммерции: архитектура и документация', 'Ключевая CRM-система: мониторинг нагрузки и поиск точек оптимизации'],
-      en: ['A mobile commerce service: architecture and documentation', 'The core CRM system: load monitoring and finding optimisation points'],
+      ru: ['Архитектура и документация сервисов в промышленной эксплуатации', 'Мониторинг нагрузки и поиск точек оптимизации'],
+      en: ['Architecture and documentation of services in production', 'Load monitoring and finding optimisation points'],
     },
   },
   {
@@ -111,8 +111,8 @@ export const nodes = [
       en: ['Claude Code and agentic development', 'LLMs, RAG, MCP', 'Designing instructions and context for agents', 'Verifying output: where models go wrong', 'Data security when working with models'],
     },
     practice: {
-      ru: ['Автогенерация sequence-диаграмм из кода', 'Дашборд нагрузки CRM, собранный с Claude', 'Агенты с интеграцией по MCP'],
-      en: ['Generating sequence diagrams from code', 'A CRM load dashboard built with Claude', 'Agents integrated over MCP'],
+      ru: ['Автогенерация sequence-диаграмм из кода', 'Дашборд мониторинга нагрузки, собранный с Claude', 'Агенты с интеграцией по MCP'],
+      en: ['Generating sequence diagrams from code', 'A load monitoring dashboard built with Claude', 'Agents integrated over MCP'],
     },
   },
   {
@@ -168,8 +168,8 @@ export const nodes = [
       en: ['Metrics, logs, traces', 'Latency percentiles and throughput', 'SLIs, SLOs and error budgets', 'Capacity planning', 'Grafana, Jaeger'],
     },
     practice: {
-      ru: ['Дашборд нагрузки ключевой CRM-системы: более 15 млн запросов в сутки'],
-      en: ['A load dashboard for the core CRM system: more than 15 million requests a day'],
+      ru: ['Дашборд мониторинга нагрузки высоконагруженной системы, собранный с Claude'],
+      en: ['A load monitoring dashboard for a high-load system, built with Claude'],
     },
   },
   {

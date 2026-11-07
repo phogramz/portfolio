@@ -4,8 +4,8 @@ export const profile = {
   name: { ru: 'Максим Морозов', en: 'Maxim Morozov' },
   role: { ru: 'Системный архитектор', en: 'Systems architect' },
   lede: {
-    ru: 'Проектирую архитектуру финансовых сервисов и CRM-системы у оператора связи. Работаю на стыке интеграций, документации и нагрузки и встраиваю ИИ-инструменты в инженерную практику.',
-    en: 'I design the architecture of financial services and the CRM system at a mobile operator. I work where integrations, documentation and load meet, and I bring AI tools into engineering practice.',
+    ru: 'Проектирую архитектуру финансовых сервисов и CRM-систем в телекоме. Работаю на стыке интеграций, документации и нагрузки и встраиваю ИИ-инструменты в инженерную практику.',
+    en: 'I design the architecture of financial services and CRM systems in telecom. I work where integrations, documentation and load meet, and I bring AI tools into engineering practice.',
   },
   goal: {
     ru: 'Следующая точка: solution-архитектура. Отвечать за решение целиком, от бизнес-задачи и требований до технологий, интеграций и стоимости владения. Это не финиш, а уровень, с которого видно, куда расти дальше.',
